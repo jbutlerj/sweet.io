@@ -1,0 +1,350 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+/*END RESET*/
+
+html {
+    overflow: hidden;
+  }
+  
+body {
+    overflow: scroll;
+  }
+
+/* FONTS */
+@font-face {
+    font-family: Montserrat-Reg;
+    src: url(fonts/Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(fonts/Montserrat-Light.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(fonts/Montserrat-Medium.ttf)
+}
+
+@font-face {
+    font-family: MinionPro-Regular;
+    src: url(fonts/MinionPro-Regular.otf)
+}
+/*END FONTS*/
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 1280px;
+    height: 100px;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #C38D94;
+}
+
+nav .logo {
+    padding-left: 50px;
+    padding-top: 45px;
+    font-family: Montserrat-Reg;
+    font-size: 30px;
+    /* background-color: lightcyan; */
+}
+
+nav .links {
+    padding-top: 42px;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+nav .links a {
+    text-decoration: none;
+    color: #C38D94;
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    padding-right: 50px;
+}
+
+section {
+    width: 1280px;
+    min-height: 700px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgba(86, 86, 118, .75), rgba(86, 86, 118, .75)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero .callout {
+    color: #C38D94;
+    font-family: Montserrat-Light;
+    font-size: 60px;
+    margin-right: 75px;
+    width: 450px;
+    text-align: right;
+}
+
+.hero .callout span {
+    font-family: Montserrat-Medium;
+}
+
+.about {
+    padding: 50px;
+}
+
+.bottom {
+    height: 250px;
+    display: flex;
+}
+
+.aboutTop {
+    height: 600px;
+    background-color: #C38D94;
+}
+
+.aboutTop h2 {
+    width: 90px;
+    color: #fff;
+    font-family: Montserrat-Medium;
+    font-size: 30px;
+    margin-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 156px;
+    /* background-color: aqua; */
+}
+
+.aboutTop p {
+    width: 606px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: MinionPro-Regular;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aquamarine; */
+}
+
+.about .bottom {
+    background-color: #CC9EA4;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .bottom .bio {
+    width: 257px;
+    padding-top: 87px;
+    /* background-color: red; opacity: .5; */
+}
+
+.about .bottom .bio h4 {
+    font-family: Montserrat-Reg;
+    font-size: 22px;
+    /* background-color: blue; opacity: .5; */
+}
+
+.about .bottom .bio h4 span {
+    font-family: Montserrat-Medium;
+}   
+
+.about .bottom .bio p {
+    font-family: MinionPro-Regular;
+    font-size: 16px;
+    /* background-color: green; opacity: .5; */
+}
+
+.photo {
+    width: 115px;
+    height: 115px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: yellow; opacity: .5; */
+    margin-right: 32px;
+    margin-top: 68px;
+}
+
+.chef1 {
+    background-image: url(../images/about-chef-one.jpg);
+}
+
+.chef2 {
+    margin-left: 91px;
+    background-image: url(../images/about-chef-two.jpg);
+}
+
+.products {
+    padding: 0 50px 50px 50px;
+}
+
+.products h2 {
+    width: 138px;
+    color: #fff;
+    font-family: Montserrat-Medium;
+    font-size: 30px;
+    padding-top: 91px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products .productsTop {
+    height: 700px;
+    background-color: #A76571;
+}
+
+.row {
+    width: 746px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto;
+    /* background-color: red; opacity: .5; */
+}
+
+.rowText {
+    width: 830px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: MinionPro-Regular;
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+    line-height: 28px;
+    text-align: center;
+}
+
+.rowText div {
+    width: 230px;
+    /* background-color: green; */
+}
+
+
+.row .treat {
+    width: 204px;
+    height: 204px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding-bottom: 30px;
+    /* background-color: blue; opacity: 1; */
+}
+
+.brownies {
+    background-image: linear-gradient(to right, rgba(167, 101, 113, .6), rgba(167, 101, 113, .6)), url(../images/brownies.jpg);
+}
+
+.cookies {
+    background-image: linear-gradient(to right, rgba(167, 101, 113, .6), rgba(167, 101, 113, .6)), url(../images/cookies.jpg);
+}
+
+.macarons {
+    background-image: linear-gradient(to right, rgba(167, 101, 113, .6), rgba(167, 101, 113, .6)), url(../images/cookies-cream.jpg);
+}
+
+.products .bottom {
+    background-color: #C38D94;
+}
+
+.contact {
+    height: 700px;
+    width: 1280px;
+    background-color: #565676;
+    color: #fff;
+}
+
+.contact h2 {
+    width: 114px;
+    height: 37px;
+    font-family: Montserrat-Medium;
+    font-size: 30px;
+    padding-top: 109px;
+    /* background-color: pink; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-top: 61px;
+}
+
+
+.textInputs {
+    margin-bottom: 22px;
+    /* background-color: orange; */
+}
+
+.textInputs label, input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textInputs label {
+    margin-bottom: 16px;
+    padding-left: 357px;
+    color: #fff;
+    font-family: MinionPro-Regular;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.textInputs input {
+    height: 53px;
+    width: 567px;
+    border: solid 3px #fff;
+    font-family: MinionPro-Regular;
+    font-size: 30px;
+    color: #fff;
+    background-color: #565676;
+}
+
+.submitButton {
+    padding-top: 23px;
+    margin-bottom: 96px;
+}
+
+.subBtn {
+    width: 237px;
+    height: 53px;
+    color: #fff;
+    font-family: MinionPro-Regular;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #565676;
+    border: solid 3px #fff;
+    margin: 0 auto;
+    border-radius: 26px;
+}
